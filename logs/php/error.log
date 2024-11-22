@@ -1,0 +1,15 @@
+[22-Nov-2024 16:35:47 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "flower_shop_lite_widgets_init" not found or invalid function name in /Users/baradia/Local Sites/mywebsite/app/public/wp-includes/class-wp-hook.php:324
+Stack trace:
+#0 /Users/baradia/Local Sites/mywebsite/app/public/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#1 /Users/baradia/Local Sites/mywebsite/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#2 /Users/baradia/Local Sites/mywebsite/app/public/wp-includes/widgets.php(1870): do_action('widgets_init')
+#3 /Users/baradia/Local Sites/mywebsite/app/public/wp-includes/class-wp-hook.php(324): wp_widgets_init('')
+#4 /Users/baradia/Local Sites/mywebsite/app/public/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#5 /Users/baradia/Local Sites/mywebsite/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#6 /Users/baradia/Local Sites/mywebsite/app/public/wp-settings.php(704): do_action('init')
+#7 /Users/baradia/Local Sites/mywebsite/app/public/wp-config.php(103): require_once('/Users/baradia/...')
+#8 /Users/baradia/Local Sites/mywebsite/app/public/wp-load.php(50): require_once('/Users/baradia/...')
+#9 /Users/baradia/Local Sites/mywebsite/app/public/wp-admin/admin.php(34): require_once('/Users/baradia/...')
+#10 /Users/baradia/Local Sites/mywebsite/app/public/wp-admin/theme-editor.php(10): require_once('/Users/baradia/...')
+#11 {main}
+  thrown in /Users/baradia/Local Sites/mywebsite/app/public/wp-includes/class-wp-hook.php on line 324
